@@ -43,7 +43,7 @@ class InvoiceController extends Controller
         'user_id' => 'required|exists:users,id',
         'client_id' => 'required|exists:clients,id',
         'invoice_number' => 'required|string|unique:invoices,invoice_number',
-        // 'total_amount' => 'required|numeric',
+        'total_amount' => 'required|numeric',
         'invoice_date' => 'required|date',
         'due_date' => 'nullable|date',
         'notes' => 'nullable|string',
